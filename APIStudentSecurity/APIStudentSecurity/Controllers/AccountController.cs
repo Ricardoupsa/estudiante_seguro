@@ -231,7 +231,7 @@ namespace APIStudentSecurity.Controllers
         [Authorize]
         [OverrideAuthentication]
         [HostAuthentication(DefaultAuthenticationTypes.ExternalCookie)]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [Route("ExternalLogin", Name = "ExternalLogin")]
         public async Task<IHttpActionResult> GetExternalLogin(string provider, string error = null)
         {
@@ -329,7 +329,7 @@ namespace APIStudentSecurity.Controllers
 
         // POST api/Account/Register
         [Authorize]
-        //[AllowAnonymous]
+       // [AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {

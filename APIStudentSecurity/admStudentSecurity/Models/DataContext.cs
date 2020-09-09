@@ -7,7 +7,7 @@
         {
 
         }
-
+         
         public System.Data.Entity.DbSet<admStudentSecurity.Models.Student> Students { get; set; }
     }
 }
